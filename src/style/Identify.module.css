@@ -1,0 +1,99 @@
+.identifydiv {
+    height: 485px;
+    width: 500px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.identify_form {
+    height: 300px;
+}
+.identifyinpt {
+    height: 44px;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    font-size: 15px;
+    padding:  3px 6px;
+}
+.identifypass {
+    color: black;
+    font-size: 29px;
+}
+.identifycnbtn {
+    margin: 20px;
+    height: 50px;
+    width: 250px;
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.identifybtn {
+    margin: 20px;
+    height: 50px;
+    width: 250px;
+    background: #42b72a;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.identifybtn:hover, .identifycnbtn:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+  }
+.identifyinst {
+    color: black;
+    width: 450px;
+}
+.identifyinstdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.identifyerrordiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.identifyerror {
+    color: red;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+}
+@media screen and (max-width: 510px){
+    .identifydiv {
+        width: auto;
+        box-shadow: none;
+    }
+    .identifyinst {
+        width: auto;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 350px){
+    .identifyinpt {
+        width: 280px;
+    }
+}
